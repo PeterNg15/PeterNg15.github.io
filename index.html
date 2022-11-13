@@ -24,12 +24,15 @@
               <tr style="padding:0px">
                 <td style="padding:2.5%;width:63%;vertical-align:middle">
                   <p style="text-align:center">
-                    <name>Peter Nguyen</name>
+                    <name>Phat Nguyen (Peter)</name>
                   </p>
-                  <p>I am Peter, a sophomore at the University of Massachusetts Amherst studying Computer Science and Mathematics.
+                  <p>I am Peter, a junior at the University of Massachusetts Amherst studying Computer Science and Mathematics.
                   </p>
                   <p>
-                    Previously, I co-founded <a href="StellaAgritech/index.html" target="_blank">Stella Agritech</a> to create technologies that enhance the efficiency of agriculture. I also led <a href="https://www.studyinternational.com/news/sustainability-ishcmc/">ISHCMC's sustainability program</a> with <a href="https://www.wholistikpermaculture.org/">Tanya Meftah</a>, which was nominated by the European Chambers of Commerce for the <a href="https://eurochamvn.glueup.com/event/eurocham-gala-dinner-and-business-awards-2019-edition-15348/business-awards.html">Best Sustainable Business Initiative in Vietnam</a> in 2019. My research journey has just begun but I hope to research ideas that will evolve out of the lab and turn into startups.
+                    Currently, I am a research assistant at the UMass Computer Vision Lab under <a href="https://people.cs.umass.edu/~elm/">Professor Erik Learned-Miller</a>. I developed the BUSS dataset to evaluate the robustness of camera rotation estimation algorithms in dense and dynamic scenes with many moving objects. 
+                  </p>
+                  <p>
+                    Previously, I co-founded <a href="StellaAgritech/index.html" target="_blank">Stella Agritech</a> to create technologies that enhance the efficiency of agriculture. I also led <a href="https://www.studyinternational.com/news/sustainability-ishcmc/">ISHCMC's sustainability program</a> with <a href="https://www.wholistikpermaculture.org/">Tanya Meftah</a>, which was nominated by the European Chambers of Commerce for the <a href="https://eurochamvn.glueup.com/event/eurocham-gala-dinner-and-business-awards-2019-edition-15348/business-awards.html">Best Sustainable Business Initiative in Vietnam</a> in 2019. I hope to research ideas that will evolve out of the lab and turn into startups.
                   </p>
                   <p style="text-align:center">
                     <a href="mailto:phatn@umass.edu">Email</a> &nbsp/&nbsp
@@ -53,7 +56,7 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>Research</heading>
                   <p>
-                    My area of research interest is in computer vision, machine learning, multi-agent visual SLAM, and robotics.
+                    My area of research interest is in autonomous vehicles, computer vision, machine learning, multi-agent, and robotics.
                   </p>
                 </td>
               </tr>
@@ -63,7 +66,42 @@
           <!--Research: -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <tr onmouseout="rotationestimation_stop()" onmouseover="rotationestimation_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='rotationestimation_image'>
+                      <img src="rotation_estimation/images/rotation_estiomation_3.jpg" width="160">
+                    </div>
+                    <img src="rotation_estimation/images/rotation_estiomation_1.jpg" width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function rotationestimation_start() {
+                      document.getElementById('rotationestimation_image').style.opacity = "1";
+                    }
 
+                    function rotationestimation_stop() {
+                      document.getElementById('rotationestimation_image').style.opacity = "0";
+                    }
+                    rotationestimation_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="#">
+                    <papertitle>Robust Frame-to-Frame Camera Rotation Estimation in Crowded Scenes</papertitle>
+                  </a>
+                  <br>
+                  <text>Fabien Delattre, David Dirnfeld, </text>
+                  <strong>Phat Nguyen, </strong>
+                  <text>Stephen Scarano, Pedro Miraldo, Michael Jeffrey Jones, Erik Learned-Miller</text> <br>
+                  
+                  <em>Under review</em>
+                  <br>
+                  <!-- <a href="data/research_files/CS389 - Final Poster.pdf" target="_blank">poster</a> / 
+                  <a href="https://www.youtube.com/watch?v=_zN-wVwPH1s">video</a> -->
+                  <p></p>
+                  <p>We introduce a novel generalization of the Hough transform on SO3 to efficiently find the camera rotation most compatible with the optical flow. We also provide a new dataset of 17 highly dynamic video sequences called BUsy Street Scenes (BUSS).</p>
+                </td>
+              </tr>
               <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -85,7 +123,7 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://waymo.com/research/block-nerf/">
+                  <a>
                     <papertitle>Classifying Facial Expressions using Vision Transformers and Convolution Neural Networks</papertitle>
                   </a>
                   <br>
@@ -94,13 +132,12 @@
                   <!--
                   <em>ICRA</em>, 2022  
                   <br>-->
-                  <a href="data/research_files/CS389 - Final Poster.pdf" target="_blank">poster</a> / 
-                  <a href="https://www.youtube.com/watch?v=_zN-wVwPH1s">video</a>
+                  <a href="data/research_files/CS389 - Final Poster.pdf" target="_blank">poster</a>
                   <p></p>
                   <p>Comparing predictive performances between ViT and CNNs to classify facial expressions</p>
                 </td>
               </tr>
-              <tr>
+              <!-- <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='nerfsuper_image'>
@@ -114,15 +151,10 @@
                   <br>
                   <strong>Peter Nguyen, </strong>
                   <text>UMass Rocket Team</text> <br>
-                  <!--
-                  <em>ICRA</em>, 2022  
-                  <br>-->
-                  <a href="http://yenchenlin.me/nerf-supervision/">github</a> / 
-                  <a href="https://arxiv.org/abs/2203.01913">project github</a> 		
                   <p></p>
                   <p>A multisensor fusion process written in Python to fuse signals in a homogeneous sensor network. The algorithm is a modified Kalman filter that is able to reduce signal noise by 29%</p>
                 </td>
-              </tr>
+              </tr> -->
             </tbody>
           </table>
 
@@ -131,7 +163,7 @@
             <tbody>
               <tr>
                 <td>
-                  <heading>Activities and Extracurriculars</heading>
+                  <heading>Activities, and Extracurriculars</heading>
                 </td>
               </tr>
             </tbody>
@@ -140,7 +172,7 @@
           <!--Activities here-->
           <table width="100%" align="center" border="0" cellpadding="20">
             <tbody>
-            
+              
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle"><img style="width: 100%" src="images/umass_rocket_team.png"></td>
                 <td width="75%" valign="center">
