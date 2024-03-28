@@ -129,3 +129,17 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+#teaching{
+  table-layout: fixed;
+  width: 100%;
+  margin-left: 1.5em;
+  margin-top: -1em;
+}
+
+#teaching td{
+  padding: 0;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  line-height: 0; 
+}
