@@ -105,21 +105,6 @@ name {
   font-size: 32px;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
 .fade {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
@@ -143,3 +128,77 @@ span.highlight {
   word-wrap: break-word;
   line-height: 0; 
 }
+
+.oral{
+  color: rgb(214, 14, 14);
+  font-weight: bold;
+  font-style: normal;
+}
+
+.paper td:nth-child(1){
+  /* width: 30%; */
+  /* padding:20px; */
+  vertical-align:middle;
+}
+
+.paper td:nth-child(2){
+  width: 70%;
+}
+
+.research_papers td{
+  padding-bottom: 2em !important;
+}
+
+.research_papers img{
+  width: 16em;
+  /* width: 100% !important; */
+  text-align: center;
+  vertical-align: middle;
+}
+
+.research_papers text{
+  color: gray;
+  font-style: italic;
+}
+
+.research_papers me{
+  font-weight: bold;
+  color: rgb(97, 96, 96);
+  font-style: italic;
+}
+
+conference{
+  font-weight: bold;
+}
+
+
+.bibtex-entry {
+  display: none;
+  width: 100%;  /* Ensure full width */
+}
+
+.bibtex-container {
+  display: block; /* Ensures it takes full width */
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: monospace;
+  /* width: 100%; */
+  width: 100%; /* Ensure full width inside table cell */
+  max-width: 100%;            /* Prevents overflow */
+}
+
+.bibtex-container td{
+  width: 100% !important
+}
+
+.email{
+  /* font-family: monospace; */
+  font-family: 'JetBrains Mono', monospace;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* .bibtex-entry td{
+  width: 100% !important;
+} */

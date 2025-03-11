@@ -10,6 +10,10 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.95em%22 font-size=%2290%22>🚀</text></svg>">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <meta name="keywords" content="Peter Nguyen,Phat Nguyen,AI,Robotics,Computer,Graphics,Vision,Deep,Machine,Learning">
+  <meta name="description" content="Peter Phat Nguyen is researcher at MIT.">
 </head>
 
 <body>
@@ -24,23 +28,32 @@
               <tr style="padding:0px">
                 <td style="padding:2.5%;width:63%;vertical-align:middle">
                   <p style="text-align:center">
-                    <name>Phat Nguyen (Peter)</name>
+                    <name>Peter Nguyen</name>
                   </p>
-                  <p>I'm currently a visiting researcher at the MIT Distributed Robotics Lab. I completed my Bachelor's in Computer Science with a minor in Mathematics at the University of Massachusetts Amherst, where I was a research assistant at the <a href="https://vis-www.cs.umass.edu/" target="_blank">Computer Vision Lab</a> under Prof. <a href="https://people.cs.umass.edu/~elm/" target="_blank">Erik Learned-Miller</a>.
-                  </p>
+                  <p class="email">peterng (at) mit (dot) edu</p>
                   <p>
-                    My research interest lies at the intersection of computer vision, machine learning, and robotics. My goal is to bridge the gap between high-level cognition and low-level planning and control, with applications for autonomous vehicles.
+                    Peter (Phat) Nguyen is a researcher at MIT CSAIL, advised by 
+                    <a href="https://danielarus.csail.mit.edu">Prof. Daniela Rus</a>. 
+                    Peter completed his Bachelor's degree in Computer Science with a minor in Mathematics at the University of Massachusetts Amherst, 
+                    where he was a researcher at the 
+                    <a href="https://www.cics.umass.edu/organizations/computer-vision-research-lab" target="_blank">Computer Vision Lab</a>, 
+                    advised by 
+                    <a href="https://people.cs.umass.edu/~elm/" target="_blank">Prof. Erik Learned-Miller</a>.
+                </p>
+                  <p>
+                    My research interest lies at the intersection of computer vision, machine learning, and robotics. My goal is to bridge the gap between high-level cognition and low-level planning and control.
                   </p>
                   <p style="text-align:center">
-                    <a href="mailto:phatn@umass.edu">Email</a> &nbsp/&nbsp
-                    <a href="data/Peter Nguyen Resume.pdf" target="_blank">Resume</a> &nbsp/&nbsp
+                    <a href="https://scholar.google.com/citations?user=KjST9oAAAAAJ&hl=en" target="_blank">Google Scholar</a> &nbsp/&nbsp
+                    <a href="data/Peter Nguyen Resume.pdf" target="_blank">CV</a> &nbsp/&nbsp
                     <a href="https://www.linkedin.com/in/peternguyen15/" target="_blank">LinkedIn</a> &nbsp/&nbsp
-                    <a href="https://github.com/PeterNg15/" target="_blank">Github</a>
+                    <a href="https://github.com/PeterNg15/" target="_blank">Github</a> &nbsp/&nbsp
+                    <a href="https://x.com/iampeterng" target="_blank">X</a>
                   </p>
                 </td>
                 <td style="padding:2.5%;width:40%;max-width:40%">
                   <!--<img style="border-radius: 50%; width:100%;max-width:100%" alt="peter nguyen's photo" src="images/PeterNg_circle.jpg"/>-->
-                  <img style="border-radius: 50%; width:100%;max-width:100%" alt="peter nguyen's photo" src="images/Peter_3.png"/>
+                  <img style="border-radius: 50%; width:100%;max-width:100%" alt="peter nguyen's photo" src="images/Peter_5.jpg"/>
                 </td>
               </tr>
             </tbody>
@@ -53,7 +66,7 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>Research</heading>
                   <p>
-                    My area of research interest is in autonomous vehicles, computer vision, machine learning, and robotics.
+                    My area of research interest is in computer vision, machine learning, and robotics.
                   </p>
                 </td>
               </tr>
@@ -61,45 +74,135 @@
           </table>
 
           <!--Research: -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" class="research_papers">
             <tbody>
-              <tr onmouseout="rotationestimation_stop()" onmouseover="rotationestimation_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='rotationestimation_image'>
-                      <img src="rotation_estimation/images/rotation_estiomation_3.jpg" width="160">
-                    </div>
-                    <img src="rotation_estimation/images/rotation_estiomation_1.jpg" width="160">
+              <tr class="paper">
+                <td>
+                  <div>
+                    <!-- <div class="two" id='rotationestimation_image'>
+                      <img src="projects/rotation_estimation/images/rotation_estiomation_3.jpg" width="160">
+                    </div> -->
+                    <img src="projects/regen/teaser.webp">
                   </div>
-                  <script type="text/javascript">
-                    function rotationestimation_start() {
-                      document.getElementById('rotationestimation_image').style.opacity = "1";
-                    }
-
-                    function rotationestimation_stop() {
-                      document.getElementById('rotationestimation_image').style.opacity = "0";
-                    }
-                    rotationestimation_stop()
-                  </script>
                 </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
+                <td>
+                  <a href="https://regen-sim.github.io/" target="_blank">
+                    <papertitle>
+                      ReGen: Generative Robot Simulation via Inverse Design</papertitle>
+                  </a>
+                  <br>
+                  <me>Phat Nguyen, </me>
+                  <text>Tsun-Hsuan Wang, Zhang-Wei Hong, Erfan Aasi, Andrew Silva, Guy Rosman, Sertac Karaman, Daniela Rus</text> <br>
+                  
+                  <conference>ICLR 2025</conference>
+                  <br>
+                  <a href="https://regen-sim.github.io/" target="_blank">project page</a>   / 
+                  <a href="https://openreview.net/forum?id=EbCUbPZjM1" target="_blank">arXiv</a>   / 
+                  <a href="javascript:void(0);" onclick="toggleBibtex('bibtex-regen')">bibtex</a>
+                  <p></p>
+                  <!-- <p>We introduce Text-to-Drive (T2D) to synthesize .</p> -->
+                </td>
+              </tr>
+              <!-- BibTeX row (Initially hidden) -->
+              <tr id="bibtex-regen" class="bibtex-entry">
+                  <td colspan="2">
+                      <div class="bibtex-container">
+                          <pre>
+  @inproceedings{
+    nguyen2025regen,
+    title={ReGen: Generative Robot Simulation via Inverse Design},
+    author={Phat Nguyen, Tsun-Hsuan Wang, Zhang-Wei Hong, Erfan Aasi, Andrew Silva, Guy Rosman, 
+            Sertac Karaman, Daniela Rus},
+    booktitle={The Thirteenth International Conference on Learning Representations},
+    year={2025},
+    url={https://openreview.net/forum?id=EbCUbPZjM1}
+  }</pre>
+                      </div>
+                  </td>
+              </tr>
+              <tr class="paper">
+                <td>
+                  <div>
+                    <img src="projects/text2drive/teaser.webp">
+                  </div>
+                </td>
+                <td>
+                  <a href="https://text-to-drive.github.io/" target="_blank">
+                    <papertitle>
+                      Text-to-Drive: Diverse Driving Behavior Synthesis via Large Language Models</papertitle>
+                  </a>
+                  <br>
+                  <me>Phat Nguyen, </me>
+                  <text>Tsun-Hsuan Wang, Zhang-Wei Hong, Sertac Karaman, Daniela Rus</text> <br>
+                  
+                  <conference>IROS 2024, <span class="oral">(Oral Presentation)</span></conference>
+                  <br>
+                  <a href="https://text-to-drive.github.io/" target="_blank">project page</a>   / 
+                  <a href="https://arxiv.org/abs/2309.08588">arXiv</a> /
+                  <a href="javascript:void(0);" onclick="toggleBibtex('bibtex-t2d')">bibtex</a>
+                  <p></p>
+                  <!-- <p>We introduce Text-to-Drive (T2D) to synthesize .</p> -->
+                </td>
+              </tr>
+              <tr id="bibtex-t2d" class="bibtex-entry">
+                  <td colspan="2">
+                      <div class="bibtex-container">
+                          <pre>
+  @INPROCEEDINGS{10801754,
+    author={Nguyen, Phat and Wang, Tsun-Hsuan and Hong, Zhang-Wei and Karaman, Sertac 
+            and Rus, Daniela},
+    booktitle={2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+    title={Text-to-Drive: Diverse Driving Behavior Synthesis via Large Language Models}, 
+    year={2024},
+    volume={},
+    number={},
+    pages={10495-10502},
+    keywords={Training;Large language models;Natural languages;Cognition;Trajectory;Driver behavior;
+      Intelligent robots;Autonomous vehicles},
+    doi={10.1109/IROS58592.2024.10801754}
+  }</pre>
+                      </div>
+                  </td>
+              </tr>
+              <tr class="paper">
+                <td>
+                  <div>
+                    <img src="projects/rotation_estimation/images/rotation_estiomation_1.jpg" >
+                  </div>
+                </td>
+                <td>
                   <a href="https://fabiendelattre.com/robust-rotation-estimation/" target="_blank">
                     <papertitle>Robust Frame-to-Frame Camera Rotation Estimation in Crowded Scenes</papertitle>
                   </a>
                   <br>
                   <text>Fabien Delattre, David Dirnfeld, </text>
-                  <strong>Phat Nguyen, </strong>
+                  <me>Phat Nguyen, </me>
                   <text>Stephen Scarano, Pedro Miraldo, Michael Jeffrey Jones, Erik Learned-Miller</text> <br>
                   
-                  <em>International Conference on Computer Vision (ICCV), 2023</em>
+                  <conference>ICCV 2023</conference>
                   <br>
                   <a href="https://fabiendelattre.com/robust-rotation-estimation/" target="_blank">project page</a>   / 
-                  <a href="./data/research_files/iccv_poster.pdf" target="_blank">poster</a>   / 
-                  <a href="https://arxiv.org/abs/2309.08588">arXiv</a>
+                  <!-- <a href="./data/research_files/iccv_poster.pdf" target="_blank">poster</a>   /  -->
+                  <a href="https://arxiv.org/abs/2309.08588">arXiv</a> /
+                  <a href="javascript:void(0);" onclick="toggleBibtex('bibtex-buss')">bibtex</a>
                   <p></p>
-                  <p>We introduce a novel generalization of the Hough transform on SO3 to efficiently find the camera rotation most compatible with the optical flow. We also provide a new dataset of 17 highly dynamic video sequences called BUsy Street Scenes (BUSS).</p>
+                  <!-- <p>We introduce a novel generalization of the Hough transform on SO3 to efficiently find the camera rotation most compatible with the optical flow. We also provide a new dataset of 17 highly dynamic video sequences called BUsy Street Scenes (BUSS).</p> -->
                 </td>
               </tr>
+              <tr id="bibtex-buss" class="bibtex-entry">
+                <td colspan="2">
+                    <div class="bibtex-container">
+                        <pre>
+  @article{Delattre2023RobustRotation,
+    author    = {Fabien Delattre, David Dirnfeld, Phat Nguyen, Stephen Scarano, Michael J. Jones, 
+                Pedro Miraldo, Erik Learned-Miller},
+    title     = {Robust frame-to-frame camera rotation estimation in crowded scenes},
+    journal   = {2023 IEEE/CVF International Conference on Computer Vision (ICCV)},
+    year      = {2023}
+  }</pre>
+                    </div>
+                </td>
+            </tr>
               <!-- <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -249,5 +352,12 @@
     </tbody>
   </table>
 </body>
+
+<script>
+  function toggleBibtex(id) {
+      var bibtex = document.getElementById(id);
+      bibtex.style.display = (bibtex.style.display === "none" || bibtex.style.display === "") ? "table-row" : "none";
+  }
+</script>
 
 </html>
